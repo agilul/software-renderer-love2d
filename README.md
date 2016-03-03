@@ -4,7 +4,7 @@ A simple 3D renderer for a set of points using transformation matrices and persp
 It doesn't use OpenGL nor DirectX, it calculates with matrix operations the final positions of 3D vertices to a 2D scene.
 
 Camera controls:
-WASD - move up, left, down and right
-F/R - move forward and backward
-Q/R - roll
-Mouse - pitch/yaw 
+* WASD - move up, left, down and right
+* F/R - move forward and backward
+* Q/R - roll
+* Mouse - pitch/yaw

@@ -8,3 +8,5 @@ Camera controls:
 * F/R - move forward and backward
 * Q/R - roll
 * Mouse - pitch/yaw
+
+Written in Lua with [LÖVE](https://love2d.org/) 0.10.1.

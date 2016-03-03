@@ -105,7 +105,7 @@ function love.update(dt)
 			if projected.x >= -1 and projected.x <= 1 and projected.y >= -1 and projected.y <= 1 then
 				local screen_x = math.min(imgWidth - 1, math.floor((projected.x + 1) * 0.5 * imgWidth))
 				local screen_y = math.min(imgHeight - 1, math.floor((projected.y + 1) * 0.5 * imgHeight))
-				points[index] = {x = screen_x, y = screen_y}
+				points[index] = {screen_x, screen_y}
 				index = index + 1
 			end
 		end
@@ -121,9 +121,7 @@ end
 
 function love.draw()
 	love.graphics.setPointSize(2)
-	for i, v in ipairs(points) do
-		love.graphics.point(v.x, v.y)
-	end
+	love.graphics.points(points);
 	
 	if instructions then
 		love.graphics.setColor(255, 255, 255)

@@ -1,3 +1,5 @@
+-- Copyright 2016 Yat Hin Wong
+
 local sqrt = math.sqrt
 
 local vector = {}
